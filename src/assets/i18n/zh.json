@@ -1,0 +1,9 @@
+{
+    "LOGIN": {
+      "Username": "用户名",
+      "password": "密码",
+      "Please input your username!":"请输入用户名!",
+      "Please input your Password!":"请输入密码!",
+      "Log in":"登录"
+    }
+  }

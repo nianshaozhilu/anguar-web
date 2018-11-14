@@ -1,0 +1,9 @@
+{
+  "LOGIN": {
+    "Username": "Username",
+    "password": "password",
+    "Please input your username!":"Please input your username!",
+    "Please input your Password!":"Please input your Password!",
+    "Log in":"Log in"
+  }
+}

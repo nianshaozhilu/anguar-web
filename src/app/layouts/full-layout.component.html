@@ -1,0 +1,29 @@
+<nz-layout class="full-screen">
+    <nz-header class="header-wrapper">
+        <div class="logo-box">
+            <img src="assets/images/logo.png"/>
+            <span class="logo-text">PuTian Smart Brewery</span>
+        </div>
+        <div class="nav-right">
+            <i nz-icon class="lang-icon" type="global" theme="outline"></i>
+            <nz-dropdown class="lang-select">
+                <a nz-dropdown>
+                    简体中文 <i nz-icon type="down"></i>
+                </a>
+                <ul nz-menu nzSelectable>
+                    <li nz-menu-item>
+                        <a>简体中文</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a>English</a>
+                    </li>
+                </ul>
+            </nz-dropdown>
+            <nz-avatar nzIcon="anticon anticon-user" nzSrc="assets/images/avatar.png"></nz-avatar>
+        </div>
+        
+    </nz-header>
+    <nz-content class="list-wrapper">
+            <router-outlet></router-outlet>
+    </nz-content>
+</nz-layout>
