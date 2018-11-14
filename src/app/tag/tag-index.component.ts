@@ -50,7 +50,7 @@ export class TagIndexComponent implements OnInit, OnDestroy {
               key     : 12,
               expand     : true,
               name    : 'John Brown jr.',
-              age     : 30,
+              age     : 30, 
               address : 'New York No. 3 Lake Park',
               children: [ {
                 expand     : true,
