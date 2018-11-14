@@ -45,7 +45,7 @@ export class TagIndexComponent implements OnInit, OnDestroy {
                         ]
                     }
                 ]
-            },
+            }, 
             {
               key     : 12,
               expand     : true,
