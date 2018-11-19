@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginModule }  from './pages/login/login.module';
 import { SharedModule } from './shared/shared.module';
 import { MainModule } from './main/main.module';
+import { CoreModule } from './core/core.module';
 
 import { FullLayoutComponent } from './layouts/full-layout.component'; 
 
@@ -21,7 +22,8 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
     SharedModule,
     AppRoutingModule,
     LoginModule,
-    MainModule
+    MainModule,
+    CoreModule
   ],
  
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TreeNodeInterface } from './treeModeInterFace';
+import { Router } from '@angular/router';
 @Component({
     selector:'tag-index',
     templateUrl:'./tag-index.component.html',
@@ -8,7 +9,7 @@ import { TreeNodeInterface } from './treeModeInterFace';
 
 export class TagIndexComponent implements OnInit, OnDestroy {
 
-    constructor(){}
+    constructor(private router: Router){}
  
     ngOnDestroy(): void {
 
@@ -140,4 +141,14 @@ export class TagIndexComponent implements OnInit, OnDestroy {
           this.expandDataCache[ item.key ] = this.convertTreeToList(item);
         });
       }
+
+      jumpDetail(id):void {
+
+        this.router.navigate(['/tag/tab'],{
+          queryParams:{
+            'id':id
+          }
+        });
+        
+    }
 }

@@ -5,5 +5,11 @@
     "Please input your username!":"Please input your username!",
     "Please input your Password!":"Please input your Password!",
     "Log in":"Log in"
+  },
+  "MSG":{
+    "Account password error":"Account password error",
+    "No login to account":"No login to account",
+    "User unconfigured function":"User unconfigured function",
+    "Language not configured":"Language not configured"
   }
 }

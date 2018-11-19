@@ -7,6 +7,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpModule } from '@angular/http';
 
 export function createTranslateHttpLoader(http:HttpClient){
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -33,7 +34,8 @@ export function createTranslateHttpLoader(http:HttpClient){
       TranslateModule,
       HttpClientModule,
       NgZorroAntdModule,
-      NgbModule
+      NgbModule,
+      HttpModule
     ],
     declarations:[
       
@@ -42,7 +44,7 @@ export function createTranslateHttpLoader(http:HttpClient){
       
     ],
     providers:[
-      
+      HttpModule
     ]
   })
   export class SharedModule { }

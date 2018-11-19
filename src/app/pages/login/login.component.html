@@ -34,7 +34,9 @@
       </nz-form-item>
       <nz-form-item style="margin-top: 90px;">
         <nz-form-control>
+          <nz-form-explain  *ngIf="msg">{{ msg }}</nz-form-explain>
           <button nz-button class="login-form-button" [nzType]="'primary'" >{{ 'LOGIN.Log in' | translate }}</button>
+     
         </nz-form-control>
       </nz-form-item>
     </form>
